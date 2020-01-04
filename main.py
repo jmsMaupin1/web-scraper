@@ -76,10 +76,7 @@ def main():
         parser.print_usage()
         sys.exit(1)
 
-    with open('kenzie.academy.html') as html:
-        parse_scraped_text(html.read())
-
-    # parse_scraped_text(scrape(args.url))
+    parse_scraped_text(scrape(args.url))
 
 
 if __name__ == '__main__':
